@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _islower - Review lowcase or uppercase
+ * _isalpha - Review lowcase or uppercase
  * @c: char lower or upper
  * Return: Return 1 low, 0 upper
  */
