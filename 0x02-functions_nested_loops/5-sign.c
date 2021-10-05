@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_sign - Print + - or 0
+ * @n: Value compare
  * Return: -1 is - 0 is 0 1 is +
  */
 int print_sign(int n)
