@@ -25,6 +25,6 @@ void times_table(void)
 			_putchar((result % 10) + 48);
 			}
 		}
-		putchar(10);
+		putchar('\n');
 	}
 }
