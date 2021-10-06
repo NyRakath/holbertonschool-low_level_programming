@@ -4,5 +4,5 @@
 #include <unistd.h>
 #include <stdio.h>
 /*Test that the function*/
-void postitive_or_negative(int i);
+void positive_or_negative(int i);
 #endif /*MAIN_H*/
