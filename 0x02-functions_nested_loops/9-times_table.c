@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - Clock from 00:00 of 23:59
+ * times_table - tables of multiplier
  */
 void times_table(void)
 {
@@ -25,6 +25,6 @@ void times_table(void)
 			_putchar((result % 10) + 48);
 			}
 		}
-		putchar('\n');
+		_putchar(10);
 	}
 }
