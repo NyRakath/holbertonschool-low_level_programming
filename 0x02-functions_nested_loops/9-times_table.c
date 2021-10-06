@@ -4,9 +4,9 @@
  */
 void times_table(void)
 {
-	int digit1, digit2, result; 
+	int digit1, digit2, result;
 
-	for (digit1 = 0; digit1 < 10; digit1++) 
+	for (digit1 = 0; digit1 < 10; digit1++)
 	{
 		_putchar(48);
 		for (digit2 = 1; digit2 < 10; digit2++)
@@ -21,14 +21,10 @@ void times_table(void)
 			}
 			else
 			{
-			_putchar((result/10) + 48);
-			_putchar((result%10) + 48);
+			_putchar((result / 10) + 48);
+			_putchar((result % 10) + 48);
 			}
-		
 		}
 		putchar(10);
 	}
-	
 }
-
-	
