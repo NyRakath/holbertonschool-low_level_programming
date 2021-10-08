@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * main - Print a sqare an equals dimensions height and weight
+ * Return: 0
+ */
 int main(void)
 {
 	int i = 1;
@@ -22,7 +25,6 @@ int main(void)
 		{
 			printf("Buzz");
 		}
-		
 		else
 		{
 			printf("%d", i);
