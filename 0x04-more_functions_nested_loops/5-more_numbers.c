@@ -17,6 +17,6 @@ void more_numbers(void)
 				}
 		_putchar(forin % 10 + '0');
 		}
-	putchar(10);
+	_putchar(10);
 	}
 }
