@@ -9,7 +9,7 @@ int main(void)
 
 	for (; i <= 100; i++)
 	{
-		if (i < 100 i != 1)
+		if (i < 100 && i > 1)
 		{
 			printf(" ");
 		}
