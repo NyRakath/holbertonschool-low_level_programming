@@ -9,10 +9,6 @@ int main(void)
 
 	for (; i <= 100; i++)
 	{
-		if (i < 100 && i > 1)
-		{
-			printf(" ");
-		}
 		if (i % 15 == 0)
 		{
 			printf("FizzBuzz");
@@ -28,6 +24,10 @@ int main(void)
 		else
 		{
 			printf("%d", i);
+		}
+		if (i < 100)
+		{
+			prinf(" ")
 		}
 	}
 	printf("\n");
