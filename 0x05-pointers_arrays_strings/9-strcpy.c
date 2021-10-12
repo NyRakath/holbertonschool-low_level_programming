@@ -5,7 +5,7 @@
  * @src: Input
  * Return:0
  */
-char _strcpy(char *dest, char *scr)
+char *_strcpy(char *dest, char *src);
 {
 	int ardd = 0;
 
