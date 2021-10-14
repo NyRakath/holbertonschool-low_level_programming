@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * 
- * 
+ * leet - change letters by numbers
+ * @s: string
+ * Return: string ouput
  */
 char *leet(char *s)
 {
