@@ -23,7 +23,7 @@ char *cap_string(char *str)
 				{
 					str[recor] = str[recor] - 32;
 				}
-				else if (i == 0)
+				else if (recor == 0)
 				{
 					str[recor] = str[recor] - 32;
 				}
