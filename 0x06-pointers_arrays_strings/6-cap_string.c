@@ -8,7 +8,7 @@
 char *cap_string(char *str)
 {
 	char specialChar[] = {' ', '\t', '\n', ',', ';', '.', '!', '?',
-		'\"', '(', ')', '{', '}', '\0'};
+		'"', '(', ')', '{', '}', '\0'};
 	int recor;
 	int recorito = 0;
 
