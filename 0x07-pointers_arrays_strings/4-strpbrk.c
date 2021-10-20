@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * *_strpbrk - search a byte char and print after
- * @s: string 
+ * @s: string
  * @accept: first char
  * Return:s or NULL when 0 coincidence
  */
