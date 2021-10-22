@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* factorial - Number of multiplier a number 
+* factorial - Number of multiplier a number
 * @n: Number factorial
 * Return: -1 error in recursion 0 good function or factorial funtion
 */
@@ -10,6 +10,5 @@ int factorial(int n)
 		return (-1);
 	if (n == 0)
 		return (0);
-	else
 	return (n * factorial(n - 1));
 }
