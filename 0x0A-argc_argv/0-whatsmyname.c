@@ -2,7 +2,7 @@
 /**
  * main - prints program name
  * @argc: Program's argument count.
- * @argv: Program's argument vector. 
+ * @argv: Program's argument vector.
  *
  * Return: Always 0 (success).
  */
