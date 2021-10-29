@@ -10,7 +10,7 @@ int *array_range(int min, int max)
 	int *poin;
 	int total, i;
 
-	if(min > max)
+	if (min > max)
 		return (NULL);
 	total = max - min + 1;
 	poin = malloc(sizeof(int) * total);
