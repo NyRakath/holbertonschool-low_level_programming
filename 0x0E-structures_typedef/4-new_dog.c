@@ -16,23 +16,26 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * print_dog - info of the dog
- * @d: pointer the stucture any dog
+ * *new_dog - new dates for a new dog
+ * @name: name of the new dog
+ * @age: age of the new dog
+ * @owner: owner of the new dog
+ * Return: return a pointer dogy with new struture for a new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
- 	dog_t *dogy;
+	dog_t *dogy;
 	int len_name, len_owner, count;
 
 	dogy = (dog_t *)malloc(sizeof(dog_t));
-	if(dogy == NULL)
-		return(NULL);
+	if (dogy == NULL)
+		return (NULL);
 	len_name = _strlen(name);
 	len_owner = _strlen(owner);
 	dogy->name = malloc(sizeof(dogy->name) * len_name);
 	if (dogy->name == NULL)
 	{
-		free (dogy->name);
+		free(dogy->name);
 		return (NULL);
 	}
 	for (count = 0; count <= len_name; count++)
@@ -41,8 +44,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dogy->owner = malloc(sizeof(dogy->owner) * len_owner);
 	if (dogy->owner == NULL)
 	{
-		free (dogy->name);
-		free (dogy);
+		free(dogy->name);
+		free(dogy);
 		return (NULL);
 	}
 	for (count = 0; count <= len_owner; count++)
