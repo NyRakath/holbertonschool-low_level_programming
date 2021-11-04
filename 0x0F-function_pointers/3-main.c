@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	num1 = atoi(*(argv + 1));
 	num2 = atoi(*(argv + 3));
 	result = r(num1, num2);
-	if (result == 0)
+	if (result == -1)
 	{
 		printf(ERROR);
 		exit(100);
