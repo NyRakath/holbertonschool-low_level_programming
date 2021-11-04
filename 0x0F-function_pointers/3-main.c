@@ -32,6 +32,6 @@ int main(int argc, char *argv[])
 		printf(ERROR);
 		exit(100);
 	}
-	printf("%d", result);
+	printf("%d\n", result);
 	return (0);
 }
