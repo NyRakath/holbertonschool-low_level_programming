@@ -12,19 +12,13 @@ void print_all(const char *const format, ...)
 	char cval; 
 
 	va_start(ap, format);
-	while (*p)
+	while (*p && format)  
 	{
 		switch (*p++)
 		{
 			case 'c':
-				cval = va_arg(ap, int);
+				cval = va_arg(ap, int);  
 				printf("%c", cval);
-				break;
-			case 'f':
-				printf("%f", va_arg(ap, double));
-				break;
-			case 'i':
-				printf("%d", va_arg(ap, int));
 				break;
 			case 's':
 				sval = va_arg(ap, char *);
@@ -34,6 +28,12 @@ void print_all(const char *const format, ...)
 					break;
 				}
 				printf("%s", sval);
+				break;
+			case 'i':
+				printf("%d", va_arg(ap, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(ap, double));
 				break;
 			default:
 				continue;
