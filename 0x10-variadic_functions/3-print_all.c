@@ -2,22 +2,21 @@
 /**
  * print_all - print any for 4 chars
  * @format: format specifier
- * Return: nothing
  */
 void print_all(const char *const format, ...)
 {
 	va_list ap;
 	char *sval;
-	const char *p = format;  
-	char cval; 
+	const char *p = format;
+	char cval;
 
 	va_start(ap, format);
-	while (*p && format)  
+	while (format && *p)
 	{
 		switch (*p++)
 		{
 			case 'c':
-				cval = (char) va_arg(ap, int);  
+				cval = (char) va_arg(ap, int);
 				printf("%c", cval);
 				break;
 			case 's':
