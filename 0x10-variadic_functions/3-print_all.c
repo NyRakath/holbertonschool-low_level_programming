@@ -7,11 +7,9 @@
 void print_all(const char *const format, ...)
 {
 	va_list ap;
-	char *sval, *separator = ", ";
-	const char *p = format;  /* here */
-	char cval;
-	float fval;
-	int ival;  /*here*/
+	char *sval;
+	const char *p = format;  
+	char cval; 
 
 	va_start(ap, format);
 	while (*p)
@@ -19,28 +17,29 @@ void print_all(const char *const format, ...)
 		switch (*p++)
 		{
 			case 'c':
-				cval = (char)va_arg(ap, int);
+				cval = va_arg(ap, int);
 				printf("%c", cval);
 				break;
 			case 'f':
-				fval = va_arg(ap, double);
-				printf("%f", fval);
+				printf("%f", va_arg(ap, double));
 				break;
 			case 'i':
-				ival = va_arg(ap, int);
-				printf("%d", ival);
+				printf("%d", va_arg(ap, int));
 				break;
 			case 's':
 				sval = va_arg(ap, char *);
 				if (!sval)
+				{
 					printf("(nil)");
+					break;
+				}
 				printf("%s", sval);
 				break;
 			default:
 				continue;
 		}
 		if (*(p))
-			printf("%s", separator);
+			printf(", ");
 	}
 	va_end(ap);
 	printf("\n");
