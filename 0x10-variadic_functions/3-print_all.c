@@ -16,7 +16,7 @@ void print_all(const char *const format, ...)
 		switch (*p++)
 		{
 			case 'c':
-				cval = (char) va_arg(ap, int);
+				cval = va_arg(ap, int);
 				printf("%c", cval);
 				break;
 			case 's':
