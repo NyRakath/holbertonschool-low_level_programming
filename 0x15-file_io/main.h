@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#define BUFRSIZE 1204
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
